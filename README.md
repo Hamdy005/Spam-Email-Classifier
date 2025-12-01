@@ -58,26 +58,32 @@ It analyzes email text using NLP preprocessing and a trained machine learning mo
 ```bash
 git clone https://github.com/your-username/spam-email-classifier
 cd spam-email-classifier
+```
 
 ### 2️⃣ Create a Virtual Environment (venv)
 ```bash
 python -m venv venv
+```
 
 ### 3️⃣ Activate the Virtual Environment
 
 **Windows:**
 ```bash
 .\venv\Scripts\activate
+```
 
 **macOS / Linux:**
 ```bash
 source venv/bin/activate
+```
 
 ### 4️⃣ Install Dependencies
 ```bash
 pip install -r requirements.txt
+```
 
 ### 5️⃣ Run the Application
 
 ```bash
 streamlit run app.py
+```
