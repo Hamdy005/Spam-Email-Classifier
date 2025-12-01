@@ -1,0 +1,13 @@
+## Data Analysis and ML Libraries
+scikit-learn
+pandas
+matplotlib
+ipykernel
+
+## NLP Libraries 
+langdetect
+nltk
+contractions
+
+## UI Library 
+streamlit
