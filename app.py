@@ -14,7 +14,7 @@ st.set_page_config(
     page_title="Spam Email Classifier",
     page_icon="📧",
     layout="wide",
-) 
+)
 
 st.title("📧 Spam Email Classifier")
 st.write("Enter your email content below and the model will predict whether it is Spam or Ham (Not Spam).")
@@ -33,20 +33,20 @@ def preprocess_text(text):
     text = re.sub(r'\d+', '<NUM>', text)
 
     # Normalize Elongated Words
-    text = re.sub(r'(.)\1+', r'\1\1', text) 
+    text = re.sub(r'(.)\1+', r'\1\1', text)
 
     # Expand Contractions (e.g.: weren't => were not)
     text = contractions.fix(text)
     
     # Removing Punctuations and Non-English Charachters
-    text = re.sub(r'[^a-z0-9\s]', '', text) 
+    text = re.sub(r'[^a-z0-9\s]', '', text)
 
-    # Lemmatization  
+    # Lemmatization
     words = text.split()
     lemmatizer = WordNetLemmatizer()
     words = [lemmatizer.lemmatize(word) for word in words]
 
-    # Returning the Cleaned Text 
+    # Returning the Cleaned Text
     cleaned_text = ' '.join(words)
     return cleaned_text
     
